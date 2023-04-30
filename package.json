@@ -2,7 +2,7 @@
   "name": "kasa",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/Abderrazzak20/project7-kasa",
+  "homepage": "https://github.com/Abderrazzak20/kasa",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
 
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",

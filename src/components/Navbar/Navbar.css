@@ -1,0 +1,27 @@
+.navbar{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 0rem;
+  color: #FF6060;
+  font-weight: 500;
+}
+.navbar a{
+  color: #FF6060;
+  text-decoration: none;
+}
+.navbar a:hover{
+  text-decoration: underline;
+}
+.navbar a.active{
+  text-decoration: underline;
+  color: black;
+}
+.navbar-logo{
+  margin-right: auto;
+}
+@media screen and (width <= 877px ){
+  .navbar a{
+    text-transform: uppercase;
+  }
+}

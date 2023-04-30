@@ -1,0 +1,39 @@
+
+.descriptions-header{
+    padding: 1rem;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    border-radius: 1rem;
+}
+.descriptions-content{
+      background-color: #F6F6F6;
+    border-radius: 1rem;
+    position: relative;
+    top: -21px;
+    z-index: -1;
+    padding: 2rem 1rem;
+    
+}
+.parent-description{
+    display: flex;
+    gap: 4rem;
+    position: relative;
+
+}
+.descriptions-header i{
+    float: right;
+    font-size: x-large;
+    color: white;
+
+}
+.descriptions-header i:hover{
+    cursor: pointer;
+}
+@media screen and (width <= 877px ) {
+.parent-description{
+    flex-direction: column;
+}
+}
+.descriptions{
+    flex-basis: 50%;
+}

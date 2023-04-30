@@ -1,0 +1,18 @@
+.banner {
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../public/background.png");
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  height: 223px;
+  justify-content: center;
+  margin-bottom: 3rem;
+  max-width: 100%;
+  position: relative;
+  color: white;
+}/*# sourceMappingURL=Banner.css.map */
+.banner h1{
+  color: white;
+}

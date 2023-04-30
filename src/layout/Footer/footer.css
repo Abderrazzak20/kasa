@@ -1,0 +1,14 @@
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  min-height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.footer-logo {
+  height: 49.44px;
+}/*# sourceMappingURL=footer.css.map */

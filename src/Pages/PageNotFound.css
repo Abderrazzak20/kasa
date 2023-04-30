@@ -1,0 +1,25 @@
+*{
+    color: #FF6060;
+}
+.Informations{
+    text-align: center;
+}
+.Informations h1{
+    font-size: 122px;
+    font-weight: 700;
+    margin-bottom: auto;
+    margin-top: 6rem;
+}
+.Informations h2{
+    font-size: 36px;
+    margin-bottom: 15rem;
+}
+
+.Informations .ToHome{
+ font-size: 27px;
+
+}
+..Informations .ToHome:hover{
+   
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+* {
+    font-weight: 500;
+
+}
+
+.ParentDescription{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 8rem;
+}
+@media screen and (width <= 876px) {
+    .ParentDescription{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}

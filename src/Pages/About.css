@@ -1,0 +1,10 @@
+.DescriptionContain{
+    padding-inline:7rem;
+    margin-bottom: 10Rem;
+}
+.DescriptionContain .parent-description{
+    display: block;
+}
+.DescriptionContain .descriptions-header{
+    border-radius: 5px;
+}

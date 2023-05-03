@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Studio(props) {
   return (
-    <Link to={`/flat/${props.id}`} >
+    <Link to={`/kasa/${props.id}`} >
       <div className='studio'> 
         <div className="image"><img src={props.imageUrl} alt="" /></div>
         <div className="title">{props.title}</div>

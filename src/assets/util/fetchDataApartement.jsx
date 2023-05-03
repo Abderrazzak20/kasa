@@ -7,7 +7,7 @@ export function useFetchFlat(id) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Simula la chiamata API utilizzando i dati del file "product"
+                
                 const flat = product.find(item => item.id === id);
                 console.log("flat trovato:", flat);
                 setFlat(flat);

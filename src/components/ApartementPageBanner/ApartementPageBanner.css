@@ -1,10 +1,9 @@
-.counter{
+.counter span{
     display: flex;
     justify-content: center;
     color: white;
     top: -2rem;
     position: relative;
-    mix-blend-mode: color-dodge;
     font-size: larger;
 
 }

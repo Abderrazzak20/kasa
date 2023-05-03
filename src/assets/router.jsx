@@ -13,9 +13,7 @@ const HeaderFooterLayout = () => {
   return (
     <><Main>
       <Navbar />
-
       <Outlet />
-
       <Footer />
     </Main>
     </>
@@ -29,11 +27,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home/>
       },
       {
         path: "/kasa/:id",
-        element: <ApartementsPage />
+        element: <ApartementsPage/>
       },
       {
         path: "/about",

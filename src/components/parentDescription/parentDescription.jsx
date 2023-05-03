@@ -6,16 +6,18 @@ export function ParentDescription(props) {
         setDescriptionsExpanded(!descriptionsExpanded);
     }
     return (
-              <div className="descriptions">
-                <p className={`descriptions-header ${descriptionsExpanded ? 'show' : ''}`} onClick={toggleDescriptions}>
-                    {props.title}
-                    <i  className={`fa-solid fa-chevron-${descriptionsExpanded ? 'down' : 'up'}`}></i>
-                </p>
-                {descriptionsExpanded && (
-                    <p className={`descriptions-content ${descriptionsExpanded ? 'show' : ''}`}> {props.content}</p>
-                )}
-            </div>
-       
+        <div className="descriptions">
+            <p className={`descriptions-header ${descriptionsExpanded ? 'show' : ''}`}
+                onClick={toggleDescriptions}>
+                {props.title}
+                <i className={`fa-solid fa-chevron-${descriptionsExpanded ? 'down' : 'up'}`}></i>
+            </p>
+            {descriptionsExpanded && (
+                <p className={`descriptions-content ${descriptionsExpanded ? 'show' : ''}`}>
+                    {props.content}</p>
+            )}
+        </div>
+
     )
 }
 

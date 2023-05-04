@@ -1,8 +1,11 @@
-.main {
-  padding-inline: 5rem;
+
+@media screen and (width >= 919px) {
+ .main{padding-inline: 3rem;
   margin-bottom: 30px;
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1240px;} 
 }
-
+.main{
+  padding: 1rem;
+}
 /*# sourceMappingURL=Main.css.map */

@@ -8,19 +8,20 @@
     padding: 0px 18px;
     margin-bottom: 2rem;
     justify-content: center;
-    padding: 4rem;
+    padding: 4rem 3rem;
 }
 
-@media screen and (width <= 938px) {
+@media screen and (width <= 905px) {
   .apartment {
     display: flex;
     justify-content: center;
     background-color: white;
-   
+    padding: initial;
   }
 }
 @media screen and (width <= 1010px) {
   .apartment a{
    flex-grow: 1;
  }
+
 }

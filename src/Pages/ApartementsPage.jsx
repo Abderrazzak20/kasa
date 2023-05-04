@@ -5,13 +5,14 @@ import ApartementPageBanner from "../components/ApartementPageBanner/ApartementP
 import ApartementPageHeader from '../components/ApartementPageHeader/ApartementPageHeader';
 import { useParams } from 'react-router-dom';
 import { useFetchFlat } from "../assets/util/fetchDataApartement";
+import PageNotFound from "./PageNotFound";
 
 
 function ApartementsPage() {
     const { id } = useParams();
     const flat = useFetchFlat(id);
 
-    if (!flat) return <div>Loading....</div>
+    if (!flat) return <PageNotFound/>
 
     return (
         <div className='Apartement-Page'>

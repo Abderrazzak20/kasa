@@ -2,26 +2,27 @@
   min-height: 200px;
   background-size: cover;
   position: relative;
-  width: 21rem;
+  width: 21.25rem;
 position: relative;
 margin-bottom: 12px;
 
 }
 .image img{
   width: 100%;
-  height: 200px;
+  height: 340px;
   object-fit: cover;
   border-radius: 10px;
   filter: brightness(0.8);
 }
-
-@media screen and (width <= 1010px) {
+@media screen and (width <= 919px) {
   .studio{
     width: auto;
-
   }
-  
+.banner h1{
+width: 16rem;
 }
+}
+
 .title {
   width: 77%;
   color: white;

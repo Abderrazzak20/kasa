@@ -8,3 +8,8 @@
 .DescriptionContain .descriptions-header{
     border-radius: 5px;
 }
+@media screen and (width <=877px) {
+    .DescriptionContain{
+        padding-inline: 0;
+    }
+}

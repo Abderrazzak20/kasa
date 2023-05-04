@@ -9,7 +9,7 @@ function PageNotFound() {
     return (
         <>
             <Main>
-                <Navbar />
+              
 
                 <div className="Informations">
                     <h1>404</h1>

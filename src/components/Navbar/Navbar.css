@@ -1,3 +1,10 @@
+.navbar-logo{
+  margin-right: auto;
+ 
+}
+.navbar-logo img{
+  width: 7rem;
+}
 .navbar{
   display: flex;
   gap: 2rem;
@@ -16,9 +23,6 @@
 .navbar a.active{
   text-decoration: underline;
   color: black;
-}
-.navbar-logo{
-  margin-right: auto;
 }
 @media screen and (width <= 877px ){
   .navbar a{

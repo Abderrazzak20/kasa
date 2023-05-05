@@ -23,7 +23,8 @@ const HeaderFooterLayout = () => {
 export const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    elementError: <PageNotFound />, // Aggiunto elemento di errore
+    // utilizziamo "elementError" per gestire la pagina 404
+    elementError: <PageNotFound />,
     children: [
       {
         path: "/kasa",
@@ -39,6 +40,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/kasa/*",
+        // questa è la pagina 404 che verrà mostrata in caso di errore
         element: <PageNotFound />
       }
     ]

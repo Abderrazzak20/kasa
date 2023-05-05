@@ -23,7 +23,7 @@ const HeaderFooterLayout = () => {
 export const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    errorElement: <PageNotFound />,
+    elementError: <PageNotFound />, // Aggiunto elemento di errore
     children: [
       {
         path: "/kasa",

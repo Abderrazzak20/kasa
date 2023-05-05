@@ -2,7 +2,8 @@
   "name": "kasa",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/Abderrazzak20/kasa",
+
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "type": "module",
   "scripts": {
     "dev": "vite",

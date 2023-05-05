@@ -1,10 +1,8 @@
 import React from 'react';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
-
 import Footer from '../layout/Footer/Footer';
 import Home from '../Pages/Home';
-
 import Main from '../layout/Main/Main';
 import ApartementsPage from '../Pages/ApartementsPage';
 import About from '../Pages/About';
@@ -23,11 +21,11 @@ const HeaderFooterLayout = () => {
 export const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    // utilizziamo "elementError" per gestire la pagina 404
+    
     elementError: <PageNotFound />,
     children: [
       {
-        path: "/kasa",
+        path: "/kasa/",
         element: <Home />
       },
       {
@@ -39,7 +37,7 @@ export const router = createBrowserRouter([
         element: <About />
       },
       {
-        path: "/kasa/*",
+        path: "*",
         element: <PageNotFound />
       }
     ]

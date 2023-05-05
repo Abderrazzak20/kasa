@@ -37,7 +37,11 @@ export const router = createBrowserRouter([
         path: "/kasa/about",
         element: <About />
       },
-     
+      {
+        path: "/*",
+        element: <PageNotFound />
+      }
+      
     ]
   }
 ]);

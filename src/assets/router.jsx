@@ -39,8 +39,7 @@ export const router = createBrowserRouter([
         element: <About />
       },
       {
-        path: "/*/",
-        
+        path: "/kasa/*",
         element: <PageNotFound />
       }
     ]

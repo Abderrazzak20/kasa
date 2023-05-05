@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
+
 import Footer from '../layout/Footer/Footer';
 import Home from '../Pages/Home';
+
 import Main from '../layout/Main/Main';
 import ApartementsPage from '../Pages/ApartementsPage';
 import About from '../Pages/About';
@@ -12,27 +14,35 @@ const HeaderFooterLayout = () => {
   return (
     <Main>
       <Navbar />
-      <Switch>
-        <Route exact path="/kasa" component={Home} />
-        <Route path="/kasa/:id" component={ApartementsPage} />
-        <Route path="/kasa/about" component={About} />
-        <Route path="*" /> // fallback route
-      </Switch>
+      <Outlet />
       <Footer />
     </Main>
   );
 };
 
-const AppRouter = () => {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={HeaderFooterLayout} />
-        <Route path="/kasa" component={HeaderFooterLayout} />
-        <Route component={PageNotFound} /> // error route
-      </Switch>
-    </BrowserRouter>
-  );
-};
-
-export default AppRouter;
+export const router = createBrowserRouter([
+  {
+    element: <HeaderFooterLayout />,
+    // utilizziamo "elementError" per gestire la pagina 404
+    elementError: <PageNotFound />,
+    children: [
+      {
+        path: "/kasa",
+        element: <Home />
+      },
+      {
+        path: "/kasa/:id",
+        element: <ApartementsPage />
+      },
+      {
+        path: "/kasa/about",
+        element: <About />
+      },
+      {
+        path: "*",
+        // questa è la pagina 404 che verrà mostrata in caso di errore
+        element: <PageNotFound />
+      }
+    ]
+  }
+]);

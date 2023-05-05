@@ -6,7 +6,7 @@ function Navbar() {
   return( 
   <nav className='navbar'> 
   <div className='navbar-logo'>
- <img src="../logo.png" alt="" />
+ <img src="logo.png" alt="" />
   </div>
   <NavLink to={"/kasa"}>
       <div>accueil</div>

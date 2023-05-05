@@ -1,11 +1,8 @@
 
 import "./Apartment.css";
 import Studio from "../Studio/Studio.jsx";
-import { useFetchApartments } from '../../assets/util/fetchData';
-
-
+import apartments from "../../assets/db.json";
 function Apartment() {
-  const apartments = useFetchApartments();
   
   return (
     <div className='apartment'>

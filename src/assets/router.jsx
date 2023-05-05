@@ -9,40 +9,34 @@ import Main from '../layout/Main/Main';
 import ApartementsPage from '../Pages/ApartementsPage';
 import About from '../Pages/About';
 import PageNotFound from '../Pages/PageNotFound';
+
 const HeaderFooterLayout = () => {
   return (
-    <><Main>
+    <Main>
       <Navbar />
       <Outlet />
-
-    </Main>
       <Footer />
-    </>
+    </Main>
   );
-
 };
+
 export const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    errorElement : <PageNotFound/>,
+    errorElement: <PageNotFound />,
     children: [
-       {
-        path: "kasa/*",
-        element: <PageNotFound/>
-      },
       {
         path: "/kasa",
-        element: <Home/>
+        element: <Home />
       },
       {
         path: "/kasa/:id",
-        element: <ApartementsPage/>
+        element: <ApartementsPage />
       },
       {
         path: "/kasa/about",
-        element: <About/>
-      },
-      
+        element: <About />
+      }
     ]
-  },
-])
+  }
+]);

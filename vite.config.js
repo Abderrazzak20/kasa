@@ -11,18 +11,6 @@ export default defineConfig({
   plugins: [react()],
   routes: [
     {
-      path: '/',
-      component: Home,
-    },
-    {
-      path: '/:id',
-      component: ApartementsPage,
-    },
-    {
-      path: '/about',
-      component: About,
-    },
-    {
       path: '*',
       component: PageNotFound,
     },

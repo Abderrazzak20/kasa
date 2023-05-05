@@ -39,8 +39,8 @@ export const router = createBrowserRouter([
         element: <About />
       },
       {
-        path: "*",
-        // questa è la pagina 404 che verrà mostrata in caso di errore
+        path: "/*/",
+        
         element: <PageNotFound />
       }
     ]

@@ -1,9 +1,21 @@
-
+import { useState, useEffect } from 'react';
 import "./Apartment.css";
 import Studio from "../Studio/Studio.jsx";
-import apartments from "../../assets/db.json";
+import apartmentsData from "../../assets/db.json";
+
+function useApartments() {
+  const [apartments, setApartments] = useState([]);
+
+  useEffect(() => {
+    setApartments(apartmentsData);
+  }, []);
+
+  return apartments;
+}
+
 function Apartment() {
-  
+  const apartments = useApartments();
+
   return (
     <div className='apartment'>
       {apartments.map((apartment) => (
